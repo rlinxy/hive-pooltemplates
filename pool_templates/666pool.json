@@ -95,20 +95,20 @@
    },
    
     {
-      "coin":"POM",
+      "coin":"NEXA",
       "servers":[
          {
             "geo":"HongKong",
             "urls":[
-               "pom.666pool.com:7556"
+               "nexa.666pool.com:7716"
             ],
             "ssl_urls":[
-               "pom.666pool.info:7557"
+               "nexa.666pool.info:7717"
             ]
          }
       ],
       "miners":{
-         "_prototype":"miners_ethash"
+         "_prototype":"miners_nexapow"
       }
    },
 
@@ -127,6 +127,24 @@
         ],
         "miners":{
          "_prototype":"miners_etchash"
+      }
+    },
+
+   {
+        "coin": "ETHW",
+        "servers": [
+            {
+                "geo": "HongKong",
+                "urls": [
+                    "ethw.666pool.com:8558"
+                ],
+	"ssl_urls":[
+                    "ethw.666pool.info:8559"
+                ]
+            }
+        ],
+        "miners":{
+         "_prototype":"miners_ethash"
       }
     }
 ]
