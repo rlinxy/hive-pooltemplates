@@ -60,22 +60,29 @@
     },
 
     {
-      "coin":"ETHW",
+      "coin":"DNX",
       "servers":[
          {
             "geo":"HongKong",
             "urls":[
-               "ethw.666pool.com:8558"
+               "dnx.666pool.com:7336"
             ],
             "ssl_urls":[
-               "ethw.666pool.info:8559"
+               "dnx.666pool.com:7338"
             ]
          }
       ],
-      "miners":{
-         "_prototype":"miners_ethash"
-      }
+        "miners": {
+            "_prototype": "miners_dynexsolve",
+            "srbminer": {
+                "user_config": "--disable-cpu\n--mallob-endpoint 38.60.42.233:18081"
+            },
+            "onezerominer": {
+                "user_config": "--mallob-endpoint 47.243.133.216:8081,38.60.42.233:18081,8.218.178.10:8082,dnx.eu.ekapool.com"
+            }
+        }
    },
+
    {
       "coin":"KAS",
       "servers":[
@@ -95,20 +102,20 @@
    },
    
     {
-      "coin":"POM",
+      "coin":"NEXA",
       "servers":[
          {
             "geo":"HongKong",
             "urls":[
-               "pom.666pool.com:7556"
+               "nexa.666pool.com:7716"
             ],
             "ssl_urls":[
-               "pom.666pool.info:7557"
+               "nexa.666pool.info:7717"
             ]
          }
       ],
       "miners":{
-         "_prototype":"miners_ethash"
+         "_prototype":"miners_nexapow"
       }
    },
 
@@ -128,5 +135,28 @@
         "miners":{
          "_prototype":"miners_etchash"
       }
+    },
+
+  {
+    "coin": "SKYDOGE",
+    "servers": [
+      {
+        "geo": "HongKong",
+        "urls": [
+          "skydoge.666pool.com:5588"
+        ],
+        "ssl_urls": [
+          "skydoge.666pool.com:5589"
+        ]
+      }
+    ],
+    "miners": {
+      "wildrig-multi": {
+        "url": "%URL%",
+        "algo": "skydoge",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
     }
+  }
 ]
