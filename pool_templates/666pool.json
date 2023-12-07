@@ -99,6 +99,29 @@
         }
     },
     {
+        "coin": "KLS",
+        "servers": [
+            {
+                "geo": "HongKong",
+                "urls": [
+                    "kls.666pool.com:5566"
+                ],
+                "ssl_urls": [
+                    "kls.666pool.info:5567"
+                ]
+            }
+        ],
+         "miners": {
+            "_prototype": "miners_karlsenhash",
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "karlsenhash",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
         "coin": "NEXA",
         "servers": [
             {
